@@ -24,7 +24,7 @@ const JobDetails = () => {
     }, [])
     
     return (
-        <section className='container my-5'>
+        <section className='container my-5 mt-5'>
             <h3 className='text-center my-5'>Job Details</h3>
             {
                 info !== null &&
@@ -50,7 +50,7 @@ const JobDetails = () => {
                             <p> <span className='fs-5 fw-semibold'>Address : </span>{info.location}</p>
                         </div>
 
-                        <Link to='/appliedJobs'><button onClick={() => handleProducts(info)} className='btn-applyNOW'>Apply Now</button></Link>
+                        <Link to='/appliedJobs'><button onClick={() => handleProducts(info)} className='btn btn-primary'>Apply Now</button></Link>
                     </div>
 
                 </div>

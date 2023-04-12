@@ -5,7 +5,6 @@ const FeaturedJob = ({ job }) => {
 
     const { jobTitle, id, companyLogo, companyName, jobType, jobTime, location, salary } = job;
 
-    console.log(job)
     return (
         <div className='border rounded p-4' >
             <img className='mb-4' src={companyLogo} alt="" />
