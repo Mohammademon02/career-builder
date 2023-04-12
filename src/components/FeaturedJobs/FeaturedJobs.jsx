@@ -22,7 +22,7 @@ const FeaturedJobs = ({ jobs }) => {
                     ></FeaturedJob>)
                 }
             </div>
-            <div className='d-flex justify-content-center'>
+            <div className='d-flex justify-content-center mt-5'>
                 <button onClick={() => handleSeeMore()} className='btn btn-primary'>See All Jobs</button>
             </div>
         </section>
