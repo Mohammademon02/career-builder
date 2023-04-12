@@ -50,7 +50,7 @@ const JobDetails = () => {
                             <p> <span className='fs-5 fw-semibold'>Address : </span>{info.location}</p>
                         </div>
 
-                        <Link to='/appliedJobs'><button onClick={() => handleProducts(info)} className='btn btn-primary px-5 '>Apply Now</button></Link>
+                        <Link to='/appliedJobs'><button onClick={() => handleProducts(info)} className='btn-custom text-white'>Apply Now</button></Link>
                     </div>
 
                 </div>

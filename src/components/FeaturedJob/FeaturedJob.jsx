@@ -6,7 +6,7 @@ const FeaturedJob = ({ job }) => {
     const { jobTitle, id, companyLogo, companyName, jobType, jobTime, location, salary } = job;
 
     return (
-        <div className='border rounded p-4' >
+        <div className='border rounded p-4 mb-5' >
             <img className='mb-4' src={companyLogo} alt="" />
             <h4 className='job-title'>{jobTitle}</h4>
             <h5 >{companyName}</h5>
@@ -23,7 +23,7 @@ const FeaturedJob = ({ job }) => {
                 <h5 > Salary: {salary}</h5>
             </div>
 
-            <Link to={`/details/${id}`}><button className='btn btn-primary'>View Details</button></Link>
+            <Link to={`/details/${id}`}><button className='btn-custom text-white'>View Details</button></Link>
         </div>
     );
 };

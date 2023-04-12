@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import FeaturedJob from '../FeaturedJob/FeaturedJob';
+import './FeaturedJobs.css'
 
 
 
@@ -14,7 +15,7 @@ const FeaturedJobs = ({ jobs }) => {
         <section>
             <h2 className='fs-2 fw-bold text-center mt-5'>Featured Jobs</h2>
             <p className='text-center'>Explore thousands of job opportunities with all the information you need. Its your future</p>
-            <div className='d-flex row row-cols-1 row-cols-md-2 g-4'>
+            <div className='featured-container'>
                 {
                     jobs.slice(0, seeMore ? 6 : 4).map(job => <FeaturedJob
                         key={job.id}
@@ -22,8 +23,8 @@ const FeaturedJobs = ({ jobs }) => {
                     ></FeaturedJob>)
                 }
             </div>
-            <div className='d-flex justify-content-center mt-5'>
-                <button onClick={() => handleSeeMore()} className='btn btn-primary'>See All Jobs</button>
+            <div className='d-flex justify-content-center my-5'>
+                <button onClick={() => handleSeeMore()} className='btn-custom text-white'>See All Jobs</button>
             </div>
         </section>
     );

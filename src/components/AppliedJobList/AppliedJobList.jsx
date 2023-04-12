@@ -30,7 +30,7 @@ const AppliedJobList = ({ job }) => {
                     </div>
                 </div>
                 <div>
-                    <Link to={`/details/${id}`}><button className='btn btn-primary px-4'>View Details</button> </Link>
+                    <Link to={`/details/${id}`}><button className='btn-custom text-white'>View Details</button> </Link>
                 </div>
             </div>
         </div>

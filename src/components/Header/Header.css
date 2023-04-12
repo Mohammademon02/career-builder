@@ -1,9 +1,19 @@
-
-
 .nav-link a {
     text-decoration: none;
     margin-left: 10px;
     color: #757575;
     font-weight: 500;
     font-size: 16px;
+}
+
+
+.btn-custom {
+    background: linear-gradient(90deg, #7E90FE 0%, #9873FF 100%);
+    border-radius: 8px;
+    border: none;
+    padding: 10px 28px;
+}
+
+.btn-custom:hover{
+    background: linear-gradient(90deg, #7E90FE 0%, #8055f4 100%);
 }

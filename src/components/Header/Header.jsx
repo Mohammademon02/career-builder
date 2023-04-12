@@ -25,7 +25,7 @@ const Header = () => {
                             <Link  to='/statistics'>Statistics</Link>
                             <Link  to='/blog'>Blog</Link>
                         </Nav>
-                            <Button variant="primary">Start Applying</Button>
+                            <button className='btn-custom text-white'>Start Applying</button>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
