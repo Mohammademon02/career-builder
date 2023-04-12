@@ -16,12 +16,12 @@ const JobDetails = () => {
 
     const data = useLoaderData();
     console.log(data)
-    // useEffect(() => {
-    //     const newData = data.filter(dt => dt.id == detailsId)
-    //     if (newData.length) {
-    //         setInfo(newData[0])
-    //     }
-    // }, [])
+    useEffect(() => {
+        const newData = data.filter(dt => dt.id == detailsId)
+        if (newData.length) {
+            setInfo(newData[0])
+        }
+    }, [])
     
     return (
         <section className='container my-5'>
