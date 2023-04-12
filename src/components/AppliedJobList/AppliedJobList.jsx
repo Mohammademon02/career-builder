@@ -1,33 +1,37 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const AppliedJobList = ({job}) => {
+const AppliedJobList = ({ job }) => {
 
     const { jobTitle, id, companyLogo, companyName, jobType, jobTime, location, salary } = job;
 
     return (
-        <div className='container job-container'>
-            <div className='cart d-flex my-4'>
-                <div className='img-div'>
-                    <img className=' ' src={companyLogo} alt="" />
-                </div>
-                <div className='review-details'>
-                    <h4 className='job-title'>{jobTitle}</h4>
-                    <h5 className='light-dark'>{companyName}</h5>
-                    <div className='d-flex gap-2'>
-                        <div>
-                            <h6 className='job-T-T'>{jobType}</h6>
+        <div iv className='container mt-5'>
+            <div className=' d-flex align-items-center justify-content-between p-3 border rounded-3'>
+                <div className='d-flex align-items-center gap-4'>
+                    <div className=''>
+                        <img className='img-fluid' src={companyLogo} alt="" />
+                    </div>
+                    <div >
+                        <h4 >{jobTitle}</h4>
+                        <h5 >{companyName}</h5>
+                        <div className='d-flex' >
+                            <div>
+                                <h6 className='btn btn-outline-primary me-2' >{jobType}</h6>
+                            </div>
+                            <div>
+                                <h6 className='btn btn-outline-primary' >{jobTime}</h6>
+                            </div>
                         </div>
-                        <div>
-                            <h6 className='job-T-T'>{jobTime}</h6>
+                        <div className='d-flex gap-4'>
+                            <h5 >{location}</h5>
+                            <h5>Salary: {salary}</h5>
                         </div>
                     </div>
-                    <div className='d-flex gap-4'>
-                        <h5 className='light-dark'>{location}</h5>
-                        <h5 className='light-dark'>Salary: {salary}</h5>
-                    </div>
                 </div>
-                <Link to={`/details/${id}`}><button className='btn-detail'>View Details</button> </Link>
+                <div>
+                    <Link to={`/details/${id}`}><button className='btn btn-primary px-4'>View Details</button> </Link>
+                </div>
             </div>
         </div>
     );
